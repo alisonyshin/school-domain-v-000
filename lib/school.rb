@@ -18,7 +18,7 @@ class School
   def sort
     sorted_roster = {}
     self.roster.keys.sort.map {|grade|
-      {grade => self.roster[grade].sort} }
+      sorted_roster[grade] = self.roster[grade].sort }
   end
   
 end
