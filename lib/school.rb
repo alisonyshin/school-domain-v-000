@@ -19,6 +19,7 @@ class School
     sorted_roster = {}
     self.roster.keys.sort.map {|grade|
       sorted_roster[grade] = self.roster[grade].sort }
+    sorted_roster
   end
   
 end
