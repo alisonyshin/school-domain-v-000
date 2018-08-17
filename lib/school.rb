@@ -16,7 +16,7 @@ class School
   end
   
   def sort
-    self.roster.keys.sort.each {|grade|
+    self.roster.keys.sort.map {|grade|
       {grade => self.roster[grade].sort} }
   end
   
