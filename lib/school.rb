@@ -11,4 +11,8 @@ class School
     self.roster[grade] << student_name
   end
   
+  def grade(grade)
+    puts self.roster[grade]
+  end
+  
 end
