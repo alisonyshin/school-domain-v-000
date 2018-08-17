@@ -12,7 +12,7 @@ class School
   end
   
   def grade(grade)
-    puts self.roster[grade]
+    self.roster[grade]
   end
   
 end
