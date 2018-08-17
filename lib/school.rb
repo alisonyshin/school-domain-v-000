@@ -18,7 +18,7 @@ class School
   def sort
     sorted_roster = {}
     self.roster.each {|grade, students_array|
-      sorted_roster[grade] = students_array.sort }
+      sorted_roster[grade] = students_array.sort}
     sorted_roster
   end
   
