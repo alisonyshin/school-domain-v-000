@@ -17,8 +17,8 @@ class School
   
   def sort
     sorted_roster = {}
-    self.roster.keys.sort.map {|grade|
-      sorted_roster[grade] = self.roster[grade].sort }
+    self.roster.each {|grade, students_array|
+      sorted_roster[grade] = students_array.sort }
     sorted_roster
   end
   
