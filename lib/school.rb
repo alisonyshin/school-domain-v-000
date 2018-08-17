@@ -8,7 +8,8 @@ class School
   end
   
   def add_student(student_name, grade)
-    self.roster[grade] = []
+    unless roster.keys.include?(grade)
+      self.roster[grade] = []
     self.roster[grade] << student_name
   end
   
