@@ -15,4 +15,9 @@ class School
     self.roster[grade]
   end
   
+  def sort
+    self.roster.map {|grade, students_array|
+      self.roster[grade] = students_array.sorted}
+  end
+  
 end
