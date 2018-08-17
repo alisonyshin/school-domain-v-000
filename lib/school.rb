@@ -7,5 +7,8 @@ class School
     @roster = Hash.new
   end
   
+  def add_student(student_name, grade)
+    self.roster[grade] = student_name
+  end
   
 end
